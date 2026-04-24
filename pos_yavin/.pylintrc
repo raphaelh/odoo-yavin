@@ -1,0 +1,6 @@
+# Plain pylint (no pylint-odoo required). From this directory:
+#   pylint --rcfile=.pylintrc models wizard tests
+# With pylint-odoo installed, use pylintrc.odoo instead (see readme/TESTS.md).
+
+[MESSAGES CONTROL]
+disable=import-error,duplicate-code

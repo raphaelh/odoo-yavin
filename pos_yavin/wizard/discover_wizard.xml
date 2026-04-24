@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2026 Raphaël HUCK
+  @author: Raphaël HUCK
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="yavin_discover_wizard_view_form" model="ir.ui.view">
+        <field name="name">yavin.discover.wizard.form</field>
+        <field name="model">yavin.discover.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Yavin Terminal Discovery" js_class="yavin_discover_wizard">
+                <sheet>
+                    <style>
+                        .o_yavin_terminal_list thead th {
+                            background-color: #dee2e6 !important;
+                        }
+                        .o_yavin_terminal_list thead th .o_sortable_icon {
+                            display: none;
+                        }
+                    </style>
+                    <group>
+                        <field name="payment_method_id" invisible="1"/>
+                        <field name="is_discovering" invisible="1" widget="boolean_toggle"/>
+                        <field name="discovery_progress" invisible="1"/>
+                        <div class="alert alert-info yavin-alert-full-width" role="alert" invisible="not is_discovering" colspan="2">
+                            <div class="d-flex align-items-center gap-3 yavin-discovery-progress-container" id="yavin_discovery_progress_container">
+                                <div class="yavin-discovery-message flex-shrink-0">
+                                    <field name="discovery_message" readonly="1" nolabel="1"/>
+                                </div>
+                                <div class="progress flex-grow-1 yavin-progress-bar-wrapper">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                         id="yavin_discovery_progress_bar"
+                                         role="progressbar"
+                                         aria-valuenow="0"
+                                         style="width: 0%"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100">
+                                    </div>
+                                </div>
+                                <span class="visually-hidden" id="yavin_discovery_progress_text">0%</span>
+                            </div>
+                        </div>
+                        <div class="alert alert-success yavin-alert-inline" role="alert" invisible="is_discovering or not discovered_terminals" colspan="2">
+                            <div class="px-2 yavin-alert-content">
+                                <field name="discovery_message" readonly="1" nolabel="1"/>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning yavin-alert-inline" role="alert" invisible="is_discovering or discovered_terminals" colspan="2">
+                            <div class="px-2 yavin-alert-content">
+                                <field name="discovery_message" readonly="1" nolabel="1"/>
+                            </div>
+                        </div>
+                    </group>
+                    <group class="yavin_discovery_terminals_group" invisible="is_discovering or not discovered_terminals" colspan="2">
+                        <field name="discovered_terminals" nolabel="1" colspan="2" mode="tree">
+                            <tree create="0" delete="0" class="o_yavin_terminal_list">
+                                <field name="wizard_id" column_invisible="True"/>
+                                <field name="name" string="Name"/>
+                                <field name="ip_address" string="IP Address"/>
+                                <button name="action_select" type="object" string="Select" class="btn btn-primary btn-sm"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_yavin_discover_wizard" model="ir.actions.act_window">
+        <field name="name">Yavin Terminal Discovery</field>
+        <field name="res_model">yavin.discover.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="point_of_sale.model_pos_payment_method"/>
+        <field name="binding_view_types">form</field>
+    </record>
+</odoo>
+

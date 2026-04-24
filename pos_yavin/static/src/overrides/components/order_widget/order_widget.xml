@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="pos_yavin.OrderWidget" t-inherit="point_of_sale.OrderWidget" t-inherit-mode="extension">
+        <xpath expr="//t[@t-foreach='props.lines']" position="replace">
+            <t t-foreach="getFilteredLines()" t-as="line" t-key="line_index">
+                <t t-slot="default" line="line"/>
+            </t>
+        </xpath>
+    </t>
+
+</templates>
+

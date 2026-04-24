@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2026 Raphaël HUCK
+  @author: Raphaël HUCK
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <data noupdate="0">
+        <function model="pos.payment.method" name="_yavin_fill_missing_method_images"/>
+    </data>
+</odoo>

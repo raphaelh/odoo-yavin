@@ -1,0 +1,46 @@
+/* Copyright 2026 Raphaël HUCK
+ * @author: Raphaël HUCK
+ * License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+ */
+
+/* Discovery progress container - inline layout */
+.yavin-discovery-progress-container {
+    padding: 0;
+    width: 100%;
+}
+
+/* Discovery message - inline, no wrap */
+.yavin-discovery-message {
+    white-space: nowrap;
+}
+
+/* Progress bar - fills remaining space, fixed height */
+.yavin-progress-bar-wrapper {
+    min-width: 6rem;
+    height: 1.25rem;
+}
+
+/* Alert containers - constant full width */
+.yavin-alert-full-width {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.yavin-alert-inline {
+    padding: 0.75rem 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.yavin-alert-content {
+    word-wrap: break-word;
+    white-space: normal;
+    min-width: 0;
+}
+
+/* Hide empty padding rows in discovery terminal list (Odoo adds them to reach 4 rows) */
+.yavin_discovery_terminals_group .o_list_table tbody tr:not(.o_data_row):not(:has(.o_field_x2many_list_row_add)) {
+    display: none;
+}
+

@@ -1,0 +1,9 @@
+# Pylint config with pylint-odoo (OCA-style). Use when the plugin is installed:
+#   pylint --rcfile=pylintrc.odoo --load-plugins=pylint_odoo models wizard tests
+# Plain pylint without the plugin: use .pylintrc instead.
+
+[MAIN]
+load-plugins=pylint_odoo
+
+[MESSAGES CONTROL]
+disable=import-error,duplicate-code

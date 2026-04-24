@@ -1,0 +1,861 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * pos_yavin
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-10 19:07+0000\n"
+"PO-Revision-Date: 2025-01-12 21:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Generated-By: Babel 2.10.3\n"
+
+#. module: pos_yavin
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+msgid ""
+"<span class=\"visually-hidden\" id=\"yavin_discovery_progress_text\">0%</"
+"span>"
+msgstr ""
+"<span class=\"visually-hidden\" id=\"yavin_discovery_progress_text\">0%</"
+"span>"
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#: code:addons/pos_yavin/static/src/payment/payment_reversal.js:0
+#, python-format
+msgid "A payment request is already being processed. Please wait."
+msgstr "Ya se está procesando una solicitud de pago. Por favor, espere."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid "Address is empty"
+msgstr "La dirección está vacía"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid "Bonjour service '%(name)s' found but has no IP address"
+msgstr "Servicio Bonjour '%(name)s' encontrado pero sin dirección IP"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid ""
+"Bonjour service '%(name)s' not found. Please check that the terminal is "
+"powered on and connected to the network, or use an IP address instead."
+msgstr ""
+"Servicio Bonjour '%(name)s' no encontrado. Por favor, verifique que el "
+"terminal esté encendido y conectado a la red, o use una dirección IP en su "
+"lugar."
+
+#. module: pos_yavin
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Cannot connect to payment terminal at %(ip_addr)s. Please check the network "
+"connection and terminal status."
+msgstr ""
+"No se puede conectar al terminal de pago %(ip_addr)s. Por favor, verifique "
+"la conexión de red y el estado del terminal."
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#, python-format
+msgid ""
+"Cannot connect to payment terminal. Please check the network connection."
+msgstr ""
+"No se puede conectar al terminal de pago. Por favor, verifique la conexión "
+"de red."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid ""
+"Cannot process negative amount (refund) without original transaction "
+"reference. Please use the refund feature on the original order."
+msgstr ""
+"No se puede procesar un importe negativo (reembolso) sin la referencia de la "
+"transacción original. Use la función de reembolso en el pedido original."
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#, python-format
+msgid ""
+"Cannot process standalone refund with Yavin. Please use the 'Refund' button "
+"on the original order to link to the original transaction."
+msgstr ""
+"No se puede procesar un reembolso independiente con Yavin. Use el botón "
+"«Reembolso» en el pedido original para vincular la transacción original."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid ""
+"Cannot resolve Bonjour name '%(name)s': zeroconf library is not installed. "
+"Please install it with: pip install zeroconf, or use an IP address instead."
+msgstr ""
+"No se puede resolver el nombre Bonjour '%(name)s': la biblioteca zeroconf no "
+"está instalada. Por favor, instálela con: pip install zeroconf, o use una "
+"dirección IP en su lugar."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Cannot resolve terminal address %(ip_addr)s. Please check the network "
+"configuration."
+msgstr ""
+"No se puede resolver la dirección del terminal %(ip_addr)s. Por favor, "
+"verifique la configuración de red."
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_reversal.js:0
+#, python-format
+msgid "Cannot reverse payment: missing transaction ID."
+msgstr ""
+"No se puede revertir el pago: falta el identificador de la transacción."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid "Connection error"
+msgstr "Error de conexión"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid "Connection refused"
+msgstr "Conexión rechazada"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__create_uid
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__create_date
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid ""
+"Currency %(currency)s is not supported by Yavin. Supported currencies are: "
+"%(supported)s"
+msgstr ""
+"La moneda %(currency)s no es compatible con Yavin. Las monedas compatibles "
+"son: %(supported)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid "DNS resolution failed"
+msgstr "Error de resolución DNS"
+
+#. module: pos_yavin
+#: model_terms:ir.ui.view,arch_db:pos_yavin.pos_payment_method_view_form_inherit_yavin
+msgid "Discover Yavin Terminals"
+msgstr "Descubrir terminales Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__discovered_terminals
+msgid "Discovered Terminals"
+msgstr "Terminales descubiertos"
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_yavin_discover_wizard_terminal
+msgid "Discovered Yavin terminal in wizard"
+msgstr "Terminal Yavin descubierto en el asistente"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__is_discovering
+msgid "Discovering"
+msgstr "Descubriendo"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__discovery_progress
+msgid "Discovery Progress"
+msgstr "Progreso del descubrimiento"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__display_name
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_display_tip
+msgid "Display Tip"
+msgstr "Mostrar propina"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/pos_payment_method.py:0
+#, python-format
+msgid "Error"
+msgstr "Error"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Error %(operation)s with Yavin payment terminal on %(ip_addr)s: %(error)s"
+msgstr ""
+"Error %(operation)s con el terminal de pago Yavin en %(ip_addr)s: %(error)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/terminal_discoverer.py:0
+#, python-format
+msgid "Error discovering Yavin terminals: %(error)s"
+msgstr "Error al descubrir terminales Yavin: %(error)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Error during search: %(error)s"
+msgstr "Error durante la búsqueda: %(error)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid "Error initializing Bonjour resolver for '%(name)s': %(error)s"
+msgstr "Error al inicializar el resolvedor Bonjour para '%(name)s': %(error)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/address_resolver.py:0
+#, python-format
+msgid "Error resolving Bonjour name '%(name)s': %(error)s"
+msgstr "Error al resolver el nombre Bonjour '%(name)s': %(error)s"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Failed to abort payment"
+msgstr "Error al cancelar el pago"
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_cancel.js:0
+#, python-format
+msgid ""
+"Failed to abort payment. Please cancel it manually on the payment terminal."
+msgstr ""
+"Error al cancelar el pago. Por favor, cancélelo manualmente en el terminal "
+"de pago."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"HTTP error from Yavin payment terminal on %(ip_addr)s%(status_code)s: "
+"%(error)s"
+msgstr ""
+"Error HTTP del terminal de pago Yavin en %(ip_addr)s%(status_code)s: "
+"%(error)s"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__id
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__ip_address
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+msgid "IP Address"
+msgstr "Dirección IP"
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_ip_address
+msgid ""
+"IP address (e.g. 192.168.1.50) or DNS name (e.g. yavin_NCB700856023) of the "
+"Yavin terminal."
+msgstr ""
+"Dirección IP (p. ej. 192.168.1.50) o nombre DNS (p. ej. yavin_NCB700856023) "
+"del terminal Yavin."
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_connection_mode
+msgid "Yavin Connection"
+msgstr "Conexión Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_connection_mode
+msgid ""
+"Automatic uses the Yavin Cloud API with Odoo.sh, and the Yavin Local API "
+"with On-Premise."
+msgstr ""
+"El modo automático usa la API Yavin Cloud con Odoo.sh y la API Yavin Local "
+"en instalaciones On-Premise."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid ""
+"IdempotentUuid mismatch! Sent: %(sent)s, Received: %(received)s. Ignoring "
+"response as it belongs to another request."
+msgstr ""
+"¡IdempotentUuid no coincide! Enviado: %(sent)s, recibido: %(received)s. Se "
+"ignora la respuesta porque pertenece a otra solicitud."
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_display_tip
+msgid ""
+"If enabled, the tip will be displayed as an order line (in POS interface and "
+"receipt) and included in the total and payment amount. If disabled, the tip "
+"will not be displayed and will not be included in the total or payment "
+"amount (but will still be in the payment amount from the terminal).\n"
+"\n"
+"Note: Tips must be enabled in the POS configuration (Point of Sale > "
+"Configuration > Settings) for this option to work."
+msgstr ""
+"Si está habilitado, la propina se mostrará como una línea de pedido (en la "
+"interfaz POS y en el recibo) y se incluirá en el total y el monto del pago. "
+"Si está deshabilitado, la propina no se mostrará y no se incluirá en el "
+"total o el monto del pago (pero seguirá estando en el monto del pago del "
+"terminal).\n"
+"\n"
+"Nota: Las propinas deben estar habilitadas en la configuración del POS "
+"(Punto de venta > Configuración > Ajustes) para que esta opción funcione."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Initial transaction ID is missing. Cannot process reversal."
+msgstr ""
+"Falta el identificador de la transacción inicial. No se puede procesar la "
+"reversión."
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment__yavin_issuer
+msgid "Issuer of the payment card (e.g., Edenred, Swile, etc.)"
+msgstr "Emisor de la tarjeta de pago (ej.: Edenred, Swile, etc.)"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__write_uid
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__write_date
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__name
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid "Network unreachable"
+msgstr "Red inalcanzable"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Network unreachable. Please check your network connection to %(ip_addr)s."
+msgstr ""
+"Red inalcanzable. Por favor, verifique su conexión de red con %(ip_addr)s."
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#: code:addons/pos_yavin/static/src/payment/payment_reversal.js:0
+#, python-format
+msgid "No answer from the payment terminal in the given time."
+msgstr "No hay respuesta del terminal de pago en el tiempo dado."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "No payment method selected"
+msgstr "No se ha seleccionado ningún método de pago"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid ""
+"No terminal found. Please check that the terminals are powered on and "
+"connected to the network."
+msgstr ""
+"No se encontró ningún terminal. Por favor, verifique que los terminales "
+"estén encendidos y conectados a la red."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Order UID is missing. Cannot abort payment without identification."
+msgstr ""
+"Falta el UID del pedido. No se puede cancelar el pago sin identificación del "
+"pedido."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid ""
+"Order UID is missing. Cannot process payment without order identification."
+msgstr ""
+"Falta el UID del pedido. No se puede procesar el pago sin identificación del "
+"pedido."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Order UID is missing. Cannot process reversal without ID."
+msgstr ""
+"Falta el UID del pedido. No se puede procesar la reversión sin "
+"identificación."
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__payment_method_id
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_yavin.js:0
+#, python-format
+msgid "Payment Terminal Error"
+msgstr "Error de terminal de pago"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_timeout_ms
+msgid "Payment Timeout (ms)"
+msgstr "Tiempo de espera de pago (ms)"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid ""
+"Payment line ID is missing. Cannot abort payment without identification."
+msgstr ""
+"Falta el ID de la línea de pago. No se puede cancelar el pago sin "
+"identificación de la línea de pago."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid ""
+"Payment line ID is missing. Cannot process payment without payment line."
+msgstr ""
+"Falta el ID de la línea de pago. No se puede procesar el pago sin línea de "
+"pago."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Payment line ID is missing. Cannot process reversal without ID."
+msgstr ""
+"Falta el ID de la línea de pago. No se puede procesar la reversión sin "
+"identificación."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid "Payment method %(id)s not found."
+msgstr "Método de pago %(id)s no encontrado."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid "Payment method ID is missing in request."
+msgstr "Falta el ID del método de pago en la solicitud."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Payment method no longer exists."
+msgstr "El método de pago ya no existe."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Payment request timed out. The terminal at %(ip_addr)s did not respond "
+"within %(timeout)s seconds. The terminal may be busy or unreachable."
+msgstr ""
+"Tiempo de espera agotado en la solicitud de pago. El terminal %(ip_addr)s no "
+"respondió en %(timeout)s segundos. El terminal puede estar ocupado o ser "
+"inalcanzable."
+
+#. module: pos_yavin
+#. odoo-javascript
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#, python-format
+msgid "Payment terminal did not respond. Please try again."
+msgstr ""
+"El terminal de pago no respondió. Por favor, inténtelo de nuevo."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid "Payment was aborted. The abort response arrived before the payment."
+msgstr ""
+"El pago fue cancelado. La respuesta de cancelación llegó antes de la "
+"respuesta de pago."
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Pedidos del punto de venta"
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_pos_payment_method
+msgid "Point of Sale Payment Methods"
+msgstr "Métodos de pago del punto de venta"
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_pos_payment
+msgid "Point of Sale Payments"
+msgstr "Pagos del punto de venta"
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Sesión del punto de venta"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__port
+msgid "Port"
+msgstr "Puerto"
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_yavin_discover_wizard__discovery_progress
+msgid "Progress of the discovery process (0-100%)"
+msgstr "Progreso del proceso de descubrimiento (0-100%)"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/operation_handlers.py:0
+#, python-format
+msgid ""
+"Received payment response instead of abort response. The payment may have "
+"completed before abort could be processed."
+msgstr ""
+"Se recibió una respuesta de pago en lugar de una respuesta de cancelación. "
+"El pago puede haberse completado antes de que se pudiera procesar la "
+"cancelación."
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_reversal_timeout_ms
+msgid "Reversal Timeout (ms)"
+msgstr "Tiempo de espera de reversión (ms)"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Search completed: %(count)d terminals found."
+msgstr "Búsqueda completada: %(count)d terminales encontrados."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Search completed: 1 terminal found."
+msgstr "Búsqueda completada: 1 terminal encontrado."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Search in progress..."
+msgstr "Búsqueda en curso..."
+
+#. module: pos_yavin
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+msgid "Select"
+msgstr "Seleccionar"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Selected terminal has no IP address."
+msgstr "El terminal seleccionado no tiene dirección IP."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "Selected terminal has no name."
+msgstr "El terminal seleccionado no tiene nombre."
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard__discovery_message
+msgid "Status"
+msgstr "Estado"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Terminal at %(ip_addr)s refused the connection. The terminal may be offline "
+"or the service is not running."
+msgstr ""
+"El terminal %(ip_addr)s rechazó la conexión. El terminal puede estar "
+"desconectado o el servicio no está en ejecución."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/wizard/discover_wizard.py:0
+#, python-format
+msgid "The payment method no longer exists."
+msgstr "El método de pago ya no existe."
+
+#. module: pos_yavin
+#. odoo-javascript
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/response_parser.py:0
+#: code:addons/pos_yavin/static/src/payment/payment_request.js:0
+#: code:addons/pos_yavin/tests/test_response_parser.py:0
+#, python-format
+msgid "The payment transaction has failed."
+msgstr "La operación de pago ha fallado."
+
+#. module: pos_yavin
+#. odoo-javascript
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/response_parser.py:0
+#: code:addons/pos_yavin/static/src/payment/payment_reversal.js:0
+#: code:addons/pos_yavin/tests/test_response_parser.py:0
+#, python-format
+msgid "The reversal transaction has failed."
+msgstr "La operación de reversión ha fallado."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/pos_payment_method.py:0
+#, python-format
+msgid "This action is only available for Yavin payment methods."
+msgstr "Esta acción solo está disponible para métodos de pago Yavin."
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_timeout_ms
+msgid "Timeout in milliseconds for payment requests to the Yavin terminal"
+msgstr ""
+"Tiempo de espera en milisegundos para las solicitudes de pago al terminal "
+"Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_reversal_timeout_ms
+msgid "Timeout in milliseconds for reversal requests to the Yavin terminal"
+msgstr ""
+"Tiempo de espera en milisegundos para las solicitudes de reversión al "
+"terminal Yavin"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/api/http_transport.py:0
+#, python-format
+msgid ""
+"Unexpected error %(operation)s with Yavin payment terminal on %(ip_addr)s: "
+"%(error)s"
+msgstr ""
+"Error inesperado %(operation)s con el terminal de pago Yavin en %(ip_addr)s: "
+"%(error)s"
+
+#. module: pos_yavin
+#: model:ir.model.fields,help:pos_yavin.field_pos_payment_method__yavin_zeroconf_available
+msgid "Whether the zeroconf library is available for terminal discovery"
+msgstr ""
+"Indica si la biblioteca zeroconf está disponible para el descubrimiento de "
+"terminales"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_yavin_discover_wizard_terminal__wizard_id
+msgid "Wizard"
+msgstr "Asistente"
+
+#. module: pos_yavin
+#: model:ir.model,name:pos_yavin.model_yavin_discover_wizard
+msgid "Wizard to discover Yavin payment terminals"
+msgstr "Asistente para descubrir terminales de pago Yavin"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/pos_payment_method.py:0
+#, python-format
+msgid "Yavin"
+msgstr "Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment__yavin_issuer
+msgid "Yavin Issuer"
+msgstr "Emisor Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_ip_address
+msgid "Yavin Terminal Address"
+msgstr "Dirección del terminal Yavin"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/pos_payment_method.py:0
+#: model:ir.actions.act_window,name:pos_yavin.action_yavin_discover_wizard
+#: model_terms:ir.ui.view,arch_db:pos_yavin.yavin_discover_wizard_view_form
+#, python-format
+msgid "Yavin Terminal Discovery"
+msgstr "Descubrimiento de terminales Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_terminal_serial
+msgid "Yavin Terminal Serial Number"
+msgstr "Número de serie del terminal Yavin"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_webhook_url
+msgid "Yavin Webhook URL"
+msgstr "URL del webhook Yavin"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/pos_payment_method.py:0
+#, python-format
+msgid ""
+"Yavin payment terminal IP address is not set on payment method '%(method)s'."
+msgstr ""
+"La dirección IP del terminal de pago Yavin no está configurada en el método "
+"de pago '%(method)s'."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid ""
+"Yavin payment terminal IP address is not set on payment method '%(method)s'. "
+"Please configure it in Point of Sale > Configuration > Payment Methods."
+msgstr ""
+"La dirección IP del terminal de pago Yavin no está configurada en el método "
+"de pago '%(method)s'. Por favor, configúrela en Punto de venta > "
+"Configuración > Métodos de pago."
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/validation.py:0
+#, python-format
+msgid "You are trying to send a null amount to the payment terminal!"
+msgstr "¡Está intentando enviar un importe nulo al terminal de pago!"
+
+#. module: pos_yavin
+#: model:ir.model.fields,field_description:pos_yavin.field_pos_payment_method__yavin_zeroconf_available
+msgid "Zeroconf Available"
+msgstr "Zeroconf disponible"
+
+#. module: pos_yavin
+#. odoo-python
+#: code:addons/pos_yavin/models/yavin/network/terminal_discoverer.py:0
+#, python-format
+msgid ""
+"zeroconf library is not installed. Please install it with: pip install "
+"zeroconf"
+msgstr ""
+"La biblioteca zeroconf no está instalada. Por favor, instálela con: pip "
+"install zeroconf"
+
+#, python-format
+#~ msgid "Error validating payment method: %(error)s"
+#~ msgstr "Error al validar el método de pago: %(error)s"
+
+#, python-format
+#~ msgid "Please select a terminal from the list."
+#~ msgstr "Por favor, seleccione un terminal de la lista."
+
+#~ msgid "Retry"
+#~ msgstr "Reintentar"
+
+#~ msgid "Selected"
+#~ msgstr "Seleccionado"
+
+#, python-format
+#~ msgid "Error aborting payment on Yavin terminal on %(ip_addr)s: %(error)s"
+#~ msgstr ""
+#~ "Error al cancelar el pago en el terminal Yavin %(ip_addr)s: %(error)s"
+
+#~ msgid "Discovery Restarted"
+#~ msgstr "Descubrimiento reiniciado"
+
+#~ msgid "A new search for terminals has been started."
+#~ msgstr "Se ha iniciado una nueva búsqueda de terminales."
+
+#~ msgid "Payment cancellation request failed."
+#~ msgstr "La solicitud de cancelación del pago falló."
+
+#~ msgid "Abort failed after maximum retries"
+#~ msgstr "Cancelación fallida después del número máximo de reintentos"
+
+#~ msgid ""
+#~ "A payment transaction is already in progress. Please wait for the "
+#~ "response or cancel it first."
+#~ msgstr ""
+#~ "Ya hay una transacción de pago en curso. Por favor, espere la respuesta o "
+#~ "cancélela primero."
+
+#, python-format
+#~ msgid "%(error_type)s to Yavin payment terminal on %(ip_addr)s: %(error)s"
+#~ msgstr "%(error_type)s al terminal de pago Yavin en %(ip_addr)s: %(error)s"
+
+#~ msgid "Yavin Payment Terminal"
+#~ msgstr "Terminal de pago Yavin"

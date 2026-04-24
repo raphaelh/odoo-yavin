@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2026 Raphaël HUCK
+  @author: Raphaël HUCK
+  License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+-->
+<odoo>
+    <record id="pos_payment_method_view_form_inherit_yavin" model="ir.ui.view">
+        <field name="name">pos.payment.method.form.inherit.yavin</field>
+        <field name="model">pos.payment.method</field>
+        <field name="inherit_id" ref="point_of_sale.pos_payment_method_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='use_payment_terminal']" position="after">
+                <field name="yavin_connection_mode" invisible="use_payment_terminal != 'yavin'"/>
+                <field name="yavin_effective_connection_mode" invisible="1"/>
+                <field name="yavin_zeroconf_available" invisible="1"/>
+                <field
+                    name="yavin_ip_address"
+                    placeholder="e.g. 192.168.1.50 or yavin_NCB700856023"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'local'"
+                />
+                <div
+                    class="text-muted small"
+                    colspan="2"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'local' or yavin_ip_address"
+                >
+                    Required for Point of Sale payments. Use Discover to scan the network, or type the address.
+                </div>
+                <div
+                    colspan="2"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'local' or not yavin_zeroconf_available"
+                >
+                    <button
+                        name="yavin_discover_terminals_action"
+                        string="Discover Yavin Terminals"
+                        type="object"
+                        class="btn-secondary"
+                        icon="fa-search"
+                    />
+                </div>
+                <div
+                    class="text-muted small"
+                    colspan="2"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'local' or yavin_zeroconf_available"
+                >
+                    LAN discovery is unavailable (install the Python zeroconf package on the server).
+                </div>
+                <field
+                    name="yavin_terminal_serial"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'cloud'"
+                    required="use_payment_terminal == 'yavin' and yavin_effective_connection_mode == 'cloud'"
+                />
+                <field
+                    name="yavin_cloud_api_key"
+                    groups="point_of_sale.group_pos_manager"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'cloud'"
+                    required="use_payment_terminal == 'yavin' and yavin_effective_connection_mode == 'cloud'"
+                />
+                <field
+                    name="yavin_webhook_url"
+                    readonly="1"
+                    invisible="use_payment_terminal != 'yavin' or yavin_effective_connection_mode != 'cloud'"
+                />
+                <field name="yavin_webhook_token" groups="point_of_sale.group_pos_manager" invisible="1"/>
+                <field name="yavin_display_tip" invisible="use_payment_terminal != 'yavin'"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

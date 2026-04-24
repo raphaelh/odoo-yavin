@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>POS Yavin payment terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+  <section class="container" style="max-width: 900px; margin: 1rem auto; font-family: sans-serif;">
+    <h2 class="text-primary" style="color: #0d6efd;">POS: Yavin payment terminal</h2>
+    <p>
+      This module connects Odoo Point of Sale to <strong>Yavin</strong> card terminals using the
+      terminal <strong>Local API</strong> (HTTP/JSON). It sends payment amounts from the POS,
+      waits for the transaction on the device, and validates or rolls back the payment line
+      according to the terminal response.
+    </p>
+    <h3 style="margin-top: 1.5rem;">Key features</h3>
+    <ul>
+      <li>Payment flow integrated in the POS payment screen (send, wait, success or error).</li>
+      <li>Optional Bonjour/mDNS discovery wizard to find terminals on the LAN (requires the Python <code>zeroconf</code> package on the Odoo server).</li>
+      <li>Configurable timeouts, reversal handling, and optional tip display on receipts when tips are enabled in POS.</li>
+      <li>Multi-currency support as exposed by the terminal integration (e.g. EUR, CHF, GBP).</li>
+    </ul>
+    <h3 style="margin-top: 1.5rem;">Server requirements</h3>
+    <p>
+      Install the Odoo dependencies <code>point_of_sale</code> and <code>pos_self_order</code> (declared in the module manifest).
+      For terminal discovery, install <code>zeroconf</code> on the server host (for example <code>pip install zeroconf</code> in the same
+      environment as Odoo). The Odoo process must reach the terminal IP and TCP port (default API port documented in your terminal setup).
+    </p>
+    <h3 style="margin-top: 1.5rem;">Configuration (summary)</h3>
+    <ol>
+      <li>Open <em>Point of Sale &gt; Configuration &gt; Payment Methods</em>.</li>
+      <li>On the card payment method, set journal type compatible with payment terminals (bank journal).</li>
+      <li>Set <em>Use a payment terminal</em> to <strong>Yavin</strong> and enter the terminal address (IP or resolvable host name).</li>
+      <li>Use <em>Discover Yavin Terminals</em> when Bonjour discovery is available, or enter the address manually.</li>
+    </ol>
+    <p style="margin-top: 2rem; color: #6c757d; font-size: 0.9rem;">
+      License: AGPL-3. The publisher URL and support contact for this listing are defined in the module manifest.
+    </p>
+  </section>
+</body>
+</html>
