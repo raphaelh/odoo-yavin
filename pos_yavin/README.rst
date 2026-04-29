@@ -77,8 +77,9 @@ This module declares the following Odoo dependencies (see
   the database and avoids errors when creating POS configurations or
   running tests.
 
-Python package **zeroconf** is required for Bonjour/mDNS terminal
-discovery (see below).
+Python package **zeroconf** is optional and only required for
+Bonjour/mDNS terminal discovery on on-prem LAN deployments (see below).
+It is not required for Cloud API flows (typical on Odoo.sh).
 
 --------------
 
@@ -183,8 +184,10 @@ on your local network. To use it:
 5. Select a terminal from the list and click *Select* to automatically
    configure the IP address
 
-**Note**: Terminal discovery requires the ``zeroconf`` Python library to
-be installed. If it's not installed, you can install it with:
+**Note**: Terminal discovery requires the ``zeroconf`` Python library.
+This is mainly useful for on-prem Local API setups. Cloud API setups
+(typical on Odoo.sh) do not require ``zeroconf``. If needed, install it
+with:
 
 .. code:: bash
 

@@ -13,9 +13,6 @@
     "images": ["static/description/images/main_screenshot.png"],
     # pos_self_order extends pos.config (e.g. self_ordering_mode NOT NULL on recent DBs)
     "depends": ["point_of_sale", "pos_self_order"],
-    "external_dependencies": {
-        "python": ["zeroconf"],
-    },
     "data": [
         "security/ir.model.access.csv",
         "data/yavin_cron_data.xml",

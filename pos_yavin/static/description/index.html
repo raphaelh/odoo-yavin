@@ -17,15 +17,15 @@
     <h3 style="margin-top: 1.5rem;">Key features</h3>
     <ul>
       <li>Payment flow integrated in the POS payment screen (send, wait, success or error).</li>
-      <li>Optional Bonjour/mDNS discovery wizard to find terminals on the LAN (requires the Python <code>zeroconf</code> package on the Odoo server).</li>
+      <li>Optional Bonjour/mDNS discovery wizard to find terminals on the LAN (requires the Python <code>zeroconf</code> package on on-prem deployments).</li>
       <li>Configurable timeouts, reversal handling, and optional tip display on receipts when tips are enabled in POS.</li>
       <li>Multi-currency support as exposed by the terminal integration (e.g. EUR, CHF, GBP).</li>
     </ul>
     <h3 style="margin-top: 1.5rem;">Server requirements</h3>
     <p>
       Install the Odoo dependencies <code>point_of_sale</code> and <code>pos_self_order</code> (declared in the module manifest).
-      For terminal discovery, install <code>zeroconf</code> on the server host (for example <code>pip install zeroconf</code> in the same
-      environment as Odoo). The Odoo process must reach the terminal IP and TCP port (default API port documented in your terminal setup).
+      For terminal discovery on on-prem Local API setups, install <code>zeroconf</code> on the server host (for example <code>pip install zeroconf</code> in the same
+      environment as Odoo). Cloud API flows (typical on Odoo.sh) do not require <code>zeroconf</code>. The Odoo process must reach the terminal IP and TCP port (default API port documented in your terminal setup).
     </p>
     <h3 style="margin-top: 1.5rem;">Configuration (summary)</h3>
     <ol>
