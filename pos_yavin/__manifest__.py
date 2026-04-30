@@ -3,7 +3,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 {
-    "name": "POS: Yavin payment terminal",
+    "name": "POS Yavin Terminal",
     "version": "17.0.1.2.6",
     "category": "Point of Sale",
     "license": "AGPL-3",
